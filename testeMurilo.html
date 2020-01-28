@@ -1,0 +1,24 @@
+h2Produtosh2
+
+div class = container
+  div ng-app = angular-tabela ng-controller = AngularTabela
+    div class = form-inline
+    div class = row
+        input type = text class = form-control ng-model = row placeholder = Produto 
+        button type = button class = btn btn-primary ng-click = addRow()
+          Adicionar
+        button  
+    div
+    div
+      br
+
+      div ng-repeat = row_ in tabela track by $index
+        div class = row
+            button type = button class = btn btn-danger ng-click = removeRow($index) 
+                Remover
+            button
+            &nbsp;span{{row_}}span  
+        div    
+      div
+    div
+div
